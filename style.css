@@ -1,1 +1,110 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.shell {
+  max-width: 960px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header styles */
+header {
+  background: #24292e;
+  color: #fff;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.ribbon-outer {
+  position: relative;
+  display: inline-block;
+}
+
+.ribbon-inner {
+  background: #0366d6;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.ribbon-inner h1 {
+  margin-bottom: 5px;
+  font-size: 2em;
+}
+
+.ribbon-inner h2 {
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+/* Footer styles */
+footer {
+  background: #24292e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #58a6ff;
+}
+
+/* GitHub ribbon */
+#forkme_banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #151515;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 999;
+}
+
+/* Main content */
+#main_content {
+  padding: 20px 0;
+}
+
+h2 {
+  color: #24292e;
+  margin-top: 20px;
+}
+
+h3 {
+  margin-top: 15px;
+  color: #444;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
