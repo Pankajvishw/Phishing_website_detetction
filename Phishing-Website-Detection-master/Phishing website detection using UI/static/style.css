@@ -1,0 +1,189 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0f0f0f;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 500px;
+    min-height: 150px;
+    fill: #fff;
+    color: #fff;
+    background-color: #303030;
+    border: none;
+    border-radius: 20px;
+}
+
+a
+{
+    color: #fff;
+}
+a:hover
+{
+    filter: brightness(0.8);
+}
+
+.safety
+{
+    animation: in 0.2s ease-in forwards;
+}
+
+.loader
+{
+    margin-top: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.loader > span 
+{
+    width: 10px;
+    aspect-ratio: 1/1;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: loading 0.8s ease-in-out infinite;
+}
+
+@keyframes loading
+{
+    0%
+    {
+        translate: 0px 0px;
+    }
+
+    50%
+    {
+        translate: 0px -15px;
+    }
+
+    100%
+    {
+        translate: 0px 0px;
+    }
+}
+.loader > span:nth-child(1)
+{
+    animation-delay: 0.2s;
+}
+
+.loader > span:nth-child(2)
+{
+    animation-delay: 0.4s;
+}
+
+.loader > span:nth-child(3)
+{
+    animation-delay: 0.6s;
+}
+nav
+{
+    fill: #fff;
+}
+form
+{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    display: flex;
+}
+input
+{
+    padding: 10px;
+    width: 250px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+input[type='text']
+{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #efefef;
+}
+
+input[type='submit']
+{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100px;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.result
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    transform-origin: top;
+}
+
+.icon
+{
+    display: grid;
+    place-items: center;
+}
+
+.icon > svg
+{
+    --scale:1.5em;
+    width: var(--scale);
+    height: var(--scale);
+}
+
+.Legitimate
+{
+    --color: rgb(0, 255, 0);
+    fill: var(--color);
+    color: var(--color);
+    animation: in 0.2s ease-in forwards;
+}
+
+.Phishing
+{
+    --color: rgb(255, 0, 0);
+    fill: var(--color);
+    color: var(--color);
+    animation: in 0.2s ease-in forwards;
+}
+
+@keyframes in
+{
+    0%
+    {
+        opacity: 0%;
+        translate: 0px -10px;
+    }
+
+    100%
+    {
+        opacity: 100%;
+        translate: 0px 0px;
+    }
+}
