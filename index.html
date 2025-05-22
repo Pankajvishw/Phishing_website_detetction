@@ -22,13 +22,27 @@
     }
 
     .hero {
+      position: relative;
       background: url('https://cdn.pixabay.com/photo/2020/04/06/18/34/phishing-5001120_1280.jpg') center/cover no-repeat;
       color: white;
       padding: 100px 0;
       text-align: center;
       text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
     }
-
+    
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); /* dark overlay */
+      z-index: 0;
+    }
+    
+    .hero .container-fluid {
+      position: relative;
+      z-index: 1;
+    }
+    
     .hero h1 {
       font-size: 3rem;
       font-weight: 600;
